@@ -1,27 +1,27 @@
 public class Day05 {
     public static void main(String[] args) {
-        Person_1119 per = new Person_1119();
-        per.Person_1("lx",33);
-        per.Person_1("lxx");
-        per.Person_1();
+
+        People p = new People();
+        People p1 = new People("lx");
+        People p2 = new People("lixin",18);
     }
 }
 
-class Person_1119{
-    String name;
-    int age;
-    public void Person_1(String name,int age){
+class People{
+    private String name;
+    private int age;
+
+    public People(String name, int age) {
         this.name = name;
         this.age = age;
-        System.out.println(1);
     }
-    public void Person_1(String name){
-        this.name = name;
-        this.age = 20;
-        System.out.println(2);
+
+    public People(String name) {
+        this(name, 18); // 调用另一个构造方法Person(String, int)
     }
-    public void Person_1(){
-        System.out.println(3);
+
+    public People() {
+        this("Unnamed"); // 调用另一个构造方法Person(String)
     }
 
 }
