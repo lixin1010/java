@@ -4,7 +4,7 @@ public class Day05_2 {
         Person1 hong = new Person1();
         ming.setName("Xiao Ming");
         // TODO: 给Person增加重载方法setName(String, String):
-        hong.setName("Xiao", "Hong");
+        hong.setName("Xiao hong,", "Hong xing");
         System.out.println(ming.getName());
         System.out.println(hong.getName());
     }
